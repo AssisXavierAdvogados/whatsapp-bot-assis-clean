@@ -238,10 +238,11 @@ a { text-decoration: none; color: inherit; }
 
 .hero__monogram {
   position: absolute;
-  right: 5%;
+  right: 8%;
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(280px, 35vw, 500px);
+  width: clamp(160px, 18vw, 260px);
+  opacity: 0.12;
   pointer-events: none;
   user-select: none;
 }
