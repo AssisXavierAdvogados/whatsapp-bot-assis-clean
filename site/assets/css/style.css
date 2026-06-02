@@ -153,38 +153,8 @@ a { text-decoration: none; color: inherit; }
   height: 100%;
 }
 
-.navbar__logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  line-height: 1.1;
-}
-.logo-monogram {
-  width: 36px;
-  height: 40px;
-  flex-shrink: 0;
-}
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-.navbar__logo .logo-main {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.navbar__logo .logo-sub {
-  font-size: .62rem;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.navbar__logo { display: flex; align-items: center; }
+.logo-img { height: 56px; width: auto; display: block; }
 
 .navbar__nav {
   display: flex;
