@@ -49,8 +49,8 @@ a { text-decoration: none; color: inherit; }
 .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--navbar-h); background: transparent; transition: background var(--transition), box-shadow var(--transition); }
 .navbar.scrolled { background: var(--navy); box-shadow: 0 2px 20px rgba(0,0,0,.3); }
 .navbar__inner { display: flex; align-items: center; justify-content: space-between; height: 100%; }
-.navbar__logo { display: flex; align-items: center; gap: 10px; line-height: 1.1; }
-.logo-monogram { width: 36px; height: 40px; flex-shrink: 0; }
+.navbar__logo { display: flex; align-items: center; }
+.logo-img { height: 52px; width: auto; display: block; }
 .logo-text { display: flex; flex-direction: column; }
 .navbar__logo .logo-main { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 700; color: var(--white); letter-spacing: .04em; text-transform: uppercase; }
 .navbar__logo .logo-sub { font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
@@ -63,7 +63,8 @@ a { text-decoration: none; color: inherit; }
 .navbar__toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--transition); }
 
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #0f2540 0%, var(--navy) 50%, var(--navy-2) 100%); overflow: hidden; }
-.hero__monogram { position: absolute; right: 8%; top: 50%; transform: translateY(-50%); width: clamp(160px, 18vw, 260px); opacity: 0.12; pointer-events: none; user-select: none; }
+.hero__logo-bg { position: absolute; right: 6%; top: 50%; transform: translateY(-50%); width: clamp(200px, 22vw, 340px); opacity: 0.10; pointer-events: none; user-select: none; }
+.hero__logo-bg img { width: 100%; height: auto; display: block; filter: brightness(10); }
 .hero__overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,27,42,.85) 40%, transparent 100%); }
 .hero__content { position: relative; z-index: 1; max-width: 680px; padding-top: var(--navbar-h); }
 .hero__eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
