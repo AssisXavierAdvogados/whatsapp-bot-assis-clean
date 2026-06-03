@@ -41,9 +41,8 @@
     }
 
     .card__logo {
-      width: 110px;
+      width: 160px;
       height: auto;
-      filter: brightness(0) invert(1);
     }
 
     .gold-bar {
@@ -117,7 +116,24 @@
 
   <div class="card">
     <div class="card__header">
-      <img src="/assets/img/logo-1.png" alt="Assis Xavier Advogados" class="card__logo" />
+      <svg class="card__logo" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gold" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#a8882a"/>
+            <stop offset="50%" stop-color="#d4b96a"/>
+            <stop offset="100%" stop-color="#b8962e"/>
+          </linearGradient>
+        </defs>
+        <!-- Monograma AX -->
+        <line x1="8" y1="72" x2="28" y2="8" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="14" y1="72" x2="34" y2="8" stroke="url(#gold)" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="29" y1="8" x2="58" y2="72" stroke="url(#gold)" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="46" y1="8" x2="34" y2="72" stroke="url(#gold)" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Texto -->
+        <text x="72" y="28" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#d4b96a" letter-spacing="2">ASSIS</text>
+        <text x="72" y="46" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#d4b96a" letter-spacing="2">XAVIER</text>
+        <text x="72" y="60" font-family="Georgia, serif" font-size="8" fill="#d4b96a" letter-spacing="3">Advogados</text>
+      </svg>
     </div>
 
     <div class="gold-bar"></div>
